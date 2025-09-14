@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Invest program</title>
+</head>	
+<body>
+	<section class="main_section">
+		<div class="balance_div">
+			<div class="balance_box">
+				<h2 class="balancerub_h2">Баланс RUB: <span class="count"></span></h2>
+				<h2 class="balanceall_h2">Стоимость портфеля: <span class="count"></span></h2>
+				<h2 class="balancein_h2">Доход: <span class="count"></span></h2>
+			</div>
+		</div>
+		<div class="grid-columns">
+			<div class="activity">
+				<div class="box">
+					<table id="etfs-table">
+			            <thead>
+			            	<tr><th>Фонды</th></tr>
+			                <tr>
+			                    <th>Название</th><th>Количество</th><th>Текущая цена</th><th>Стоимость</th><th>Прибыль/Убыток</th><th>Цель</th><th>Прогресс</th>
+			                </tr>
+			            </thead>
+			            <tbody></tbody>
+			        </table>
+				</div>
+				<div class="box">
+					<table id="bonds-table">
+						<thead>
+			            	<tr><th>Облигации</th></tr>
+			                <tr>
+			                    <th>Название</th><th>Количество</th><th>Текущая цена</th><th>Стоимость</th><th>Прибыль/Убыток</th><th>Цель</th><th>Прогресс</th>
+			                </tr>
+			            </thead>
+			            <tbody>
+			            	
+			            </tbody>
+			        </table>
+				</div>
+				<div class="box">
+					<table id="stocks-table">
+						<thead>
+			            	<tr><th>Акции</th></tr>
+			                <tr>
+			                    <th>Название</th><th>Количество</th><th>Текущая цена</th><th>Стоимость</th><th>Прибыль/Убыток</th><th>Цель</th><th>Прогресс</th>
+			                </tr>
+			            </thead>
+			            <tbody>
+			            	
+			            </tbody>
+			        </table>
+				</div>
+				<div class="box">
+					<table id="currencies-table">
+						<thead>
+			            	<tr><th>Валюты</th></tr>
+			                <tr>
+			                    <th>Название</th><th>Количество</th><th>Текущая цена</th><th>Стоимость</th><th>Прибыль/Убыток</th><th>Цель</th><th>Прогресс</th>
+			                </tr>
+			            </thead>
+			            <tbody></tbody>
+			        </table>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<script type="text/javascript" src="/eel.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	background: #333;
+}
+.main_section{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* balance styles */
+
+.balance_div{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-inline: 10%;
+	background: #1E1E1F;
+}
+.balance_box{
+	padding: 20px 30px;
+	border: 2px solid #1E9D1F;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 10px;
+}
+.balance_box .balancerub_h2,
+.balance_box .balanceall_h2,
+.balance_box .balancein_h2{
+	color: rgba(255, 255, 255, 0.9);
+	text-align: left;
+}
+.balance_box .balancerub_h2 .count.minus,
+.balance_box .balancerub_h2 .count.minus ~ span,
+.balance_box .balanceall_h2 .count.minus,
+.balance_box .balanceall_h2 .count.minus ~ span,
+.balance_box .balancein_h2 .count.minus,
+.balance_box .balancein_h2 .count.minus ~ span,
+.minus{
+	color: #B80804;
+}
+.balance_box .balancerub_h2 .count.plus,
+.balance_box .balancerub_h2 .count.plus ~ span,
+.balance_box .balanceall_h2 .count.plus,
+.balance_box .balanceall_h2 .count.plus ~ span,
+.balance_box .balancein_h2 .count.plus,
+.balance_box .balancein_h2 .count.plus ~ span,
+.plus{
+	color: #1E9D1F;
+}
+
+/* grid columns styles */
+
+.activity{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+	margin-top: 20px;
+}
+.box{
+	padding: 20px;
+	border: 2px solid #64BC65;
+	border-radius: 20px;
+}
+.box table,
+.box table thead,
+.box table tbody{
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.box table thead tr,
+.box table tbody tr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: #64BC65;
+	gap: 20px;
+	padding: 20px;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: monospace;
+	letter-spacing: 0.1em;
+}
+.box table thead tr:nth-child(1){
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	text-transform: uppercase;
+	font-size: 2em;
+	border-bottom: 2px solid #333;
+}
+.box table thead tr:nth-child(2){
+	border-bottom: 2px solid #333;
+}
+.box table thead tr:nth-child(2) th{
+	padding-right: 10px;
+	width: calc(100% / 5);
+}
+.box table tbody tr:nth-last-child(1){
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.box table tbody tr td{
+	font-size: 1em;
+	width: calc(100% / 7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box table tbody tr:hover{
+	cursor: pointer;
+	background: #26AF81;
+}
+/* progress bar */
+.progress {
+  padding: 4px;
+  background: #00000040;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px #00000040, 0 1px #ffffff14;
+  box-shadow: inset 0 1px 2px #00000040, 0 1px #ffffff14;
+  width: 100%;
+}
+.progress-bar {
+	width: 100%;
+  height: 16px;
+  border-radius: 4px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
